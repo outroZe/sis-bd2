@@ -1,7 +1,7 @@
 php:
   build: .
   ports:
-    - "80:80"
+    - "9090:80"
     - "443:443"
   volumes:
     - ./public:/var/www/html
@@ -10,7 +10,7 @@ php:
 db:
   image: mysql:8
   ports:
-    - "3306:3306"
+    - "52000:3306"
   volumes:
     - /var/lib/mysql
   environment:
