@@ -15,5 +15,4 @@ CREATE TABLE livros (id_livro INT PRIMARY KEY
 , CONSTRAINT autor_fk FOREIGN KEY(autor) REFERENCES autores(nome)
 );
 
-drop table livros;
-drop table autores;
+
